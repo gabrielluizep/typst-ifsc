@@ -1,0 +1,50 @@
+
+	"name": "Ubuntu",
+	// Or use a Dockerfile or Docker Compose file. More info: https://containers.dev/guide/dockerfile
+	"image": "mcr.microsoft.com/devcontainers/base:jammy",
+	"features": {
+		"ghcr.io/devcontainers-contrib/features/zsh-plugins:0": {
+			"plugins": "",
+			"omzPlugins": "https://github.com/zsh-users/zsh-autosuggestions",
+			"username": "root"
+		}
+	},
+	"customizations": {
+		"vscode": {
+			"extensions": [
+				"GitHub.copilot",
+			  "nvarner.typst-lsp",
+				"dracula-theme.theme-dracula",
+				"PKief.material-icon-theme",
+			],
+			"settings": {
+				"workbench.colorTheme": "Dracula",
+				"workbench.iconTheme": "material-icon-theme",
+				"material-icon-theme.activeIconPack": "react_redux",
+				"editor.minimap.enabled": false,
+				"editor.tabSize": 2,
+				"editor.insertSpaces": true,
+				"editor.detectIndentation": true,
+				"editor.bracketPairColorization.enabled": true,
+				"editor.guides.bracketPairs": "active",
+				"editor.formatOnSave": true,
+				"editor.defaultFormatter": "esbenp.prettier-vscode",
+
+				"github.copilot.enable": {
+					"*": true
+				},
+				"files.eol": "\n"
+			}
+		}
+	}
+	// Features to add to the dev container. More info: https://containers.dev/features.
+	// "features": {},
+	// Use 'forwardPorts' to make a list of ports inside the container available locally.
+	// "forwardPorts": [],
+	// Use 'postCreateCommand' to run commands after the container is created.
+	// "postCreateCommand": "uname -a",
+	// Configure tool-specific properties.
+	// "customizations": {},
+	// Uncomment to connect as root instead. More info: https://aka.ms/dev-containers-non-root.
+	// "remoteUser": "root"
+}
