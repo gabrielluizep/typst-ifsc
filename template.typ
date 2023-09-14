@@ -4,6 +4,9 @@
   title: [
     Typst IFSC-SJ
   ],
+  subtitle: [
+    Um template para o Typst voltado para 
+  ],
   authors: (
     (
       name: "Gabriel Luiz Espindola Pedro",
