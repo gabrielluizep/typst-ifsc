@@ -8,9 +8,7 @@
     Um template para o Typst voltado para 
   ],
   authors: (
-    (
-      name: "Gabriel Luiz Espindola Pedro",
-    ),
+    [Gabriel Luiz Espindola Pedro],
   ),
   date: [
     13 de Setembro de 2023
