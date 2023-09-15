@@ -1,8 +1,4 @@
-#let lista(
-    titulo: none,
-    materia: none,
-    doc,
-  ) = {
+#let lista(titulo: none, materia: none, doc) = {
   set text(font: "Latin Modern Roman", size: 1.1em, lang: "pt")
   set par(justify: true)
   show link: underline
@@ -33,10 +29,10 @@
       Instituto Federal de Santa Catarina\
       Campus São José\
       Área de Telecomunicações
-    ]
+    ],
   )
 
-  heading(level: 1, materia + " - " + titulo )
+  heading(level: 1, materia + " - " + titulo)
 
   doc
 }
