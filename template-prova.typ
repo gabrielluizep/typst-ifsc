@@ -1,12 +1,12 @@
 /* Exemplo de uso
- #show: doc => prova(
- titulo: [Prova 1A],
- curso: [Engenharia de Telecomunicações],
- materia: [Programação I],
- professor: [Roberto Wanderley da Nóbrega],
- semestre: [2023.2],
- doc,
- )
+  #show: doc => prova(
+    titulo: [Prova 1A],
+    curso: [Engenharia de Telecomunicações],
+    materia: [Programação I],
+    professor: [Roberto Wanderley da Nóbrega],
+    semestre: [2023.2],
+    doc,
+  )
 */
 
 #let prova(

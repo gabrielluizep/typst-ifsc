@@ -5,7 +5,9 @@
   set heading(numbering: "1.")
   set math.equation(numbering: "(1)")
 
-  align(center)[#image("./assets/ifsc-v.png", width: 100pt)]
+  align(center)[
+    #image("./assets/ifsc-v.png", width: 100pt)
+  ]
 
   align(horizon + center)[
     #text(20pt, title, weight: "bold") \
