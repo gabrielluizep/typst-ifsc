@@ -1,12 +1,12 @@
 /* Exemplo de uso
-  #show: doc => prova(
-    titulo: [Prova 1A],
-    curso: [Engenharia de Telecomunicações],
-    materia: [Programação I],
-    professor: [Roberto Wanderley da Nóbrega],
-    semestre: [2023.2],
-    doc,
-  )
+ #show: doc => prova(
+ titulo: [Prova 1A],
+ curso: [Engenharia de Telecomunicações],
+ materia: [Programação I],
+ professor: [Roberto Wanderley da Nóbrega],
+ semestre: [2023.2],
+ doc,
+ )
 */
 
 #let prova(
@@ -24,11 +24,14 @@
     footer: [
       #set text(font: "Fira Sans", stretch: 50%, size: 0.65em)
       #set align(center)
-      #text(rgb(50, 160, 65))[*Instituto Federal de Santa Catarina -- Câmpus São José*]\
-      Rua José Lino Kretzer, 608 --- Praia Comprida --- São José, SC --- CEP: 88130-310 \
+      #text(
+        rgb(50, 160, 65),
+      )[*Instituto Federal de Santa Catarina -- Câmpus São José*]\
+      Rua José Lino Kretzer, 608 --- Praia Comprida --- São José, SC --- CEP:
+      88130-310\
       Fone: (48) 3381-2800 --- #link("www.ifsc.edu.br") \
       página #counter(page).display("1 de 1", both: true)
-    ]
+    ],
   )
 
   set text(font: "Latin Modern Roman", size: 1em, lang: "br")
@@ -59,18 +62,18 @@
     fill: luma(240),
     inset: 1.25em,
   )[
-    #align(center)[
-      #set text(font: "Latin Modern Sans")
-      #text(materia,  size: 1.1em) \
-      #text(curso, size: 0.9em) 
+      #align(center)[
+        #set text(font: "Latin Modern Sans")
+        #text(materia, size: 1.1em) \
+        #text(curso, size: 0.9em)
+      ]
     ]
-  ]
 
-  text(professor ,size: 0.9em, font: "Latin Modern Sans")
+  text(professor, size: 0.9em, font: "Latin Modern Sans")
   h(1fr)
-  text(semestre ,size: 0.9em, font: "Latin Modern Sans")
+  text(semestre, size: 0.9em, font: "Latin Modern Sans")
 
   heading(titulo, level: 1)
-  
-  doc  
+
+  doc
 }
