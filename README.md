@@ -1,8 +1,6 @@
-<div style="background-color: white; padding: 4px">
-  <p align="center">
-    <img src="assets/ifsc-v.png" width="100px" align="center">
-  </p>
-</div>
+<p align="center">
+  <img src="assets/ifsc-v.png" width="100px" align="center">
+</p>
 
 ---
 
@@ -19,7 +17,3 @@ git submodule add https://github.com/gabrielluizep/typst-ifsc.git
 ```
 
 Desta maneira você poderá utilizar os templates disponíveis no repositório de templates, importando diretamente do submódulo, contribuir com o repositório e evitar cópia de arquivos entre os projetos que utilizarem os templates.
-
-And here's to you, <span style="background-color:green">Mrs. Robinson</span>, Jesus loves you more than you will know.
-
-abc
