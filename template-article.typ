@@ -16,7 +16,7 @@
 
   align(bottom + left)[
     #text(list(..authors, marker: "", body-indent: 0pt), weight: "semibold")
-    date
+    #text(date)
   ]
 
   pagebreak()
