@@ -1,17 +1,39 @@
 #import "default.typ": default
 
-#let article(title: none, subtitle: none, authors: (), date: none, doc) = {
-  set enum(numbering: "1º)")
+#let article(
+  title: "Typst IFSC",
+  subtitle: none,
+  authors: ("José Carlos Silva"),
+  date: none,
+  doc,
+) = {
+  // Define metadados do documento
+  set document(title: title, author: authors)
+
+  set page(
+    numbering: "1",
+    paper: "a4",
+    margin: (top: 3cm, bottom: 2cm, left: 3cm, right: 2cm),
+  )
+  set text(size: 12pt, font: "FreeSans")
+  // TODO: verificar se há necessidade de colocar espaçamento de 1.5
+  set par(
+    first-line-indent: 1.5cm,
+    justify: true,
+    leading: 0.65em,
+    linebreaks: "optimized",
+  )
   set heading(numbering: "1.")
   set math.equation(numbering: "(1)")
 
   align(center)[
-    #image("./assets/ifsc-v.png", width: 100pt)
+    #image("./assets/ifsc-v.png", width: 10em)
   ]
 
   align(horizon + center)[
-    #text(20pt, title, weight: "bold") \
-    #text(16pt, subtitle, weight: "semibold")
+    #text(20pt, title, weight: "bold")
+    #v(1em)
+    #text(subtitle, weight: "regular")
   ]
 
   align(bottom + left)[
@@ -21,24 +43,46 @@
 
   pagebreak()
 
+  show outline.entry.where(level: 1): it => {
+    strong(it)
+  }
+
+  // TODO: Verificar maneira melhor de alterar espaçamento entre titulo e corpo
+  outline(title: [Sumário #v(1em)], indent: 2em)
+
+  pagebreak()
+
   default(doc)
 }
 
-/* Exemplo de uso:
-  #show: doc => article(
-    title: [
-      Typst IFSC-SJ
-    ],
-    subtitle: [
-      Um template para o Typst voltado para
-    ],
-    // Se apenas um autor colocar , no final para indicar que é um array
-    authors: (
-      [Gabriel Luiz Espindola Pedro],
-    ),
-    date: [
-      13 de Setembro de 2023
-    ],
-    doc,
-  )
-*/
+// /* Exemplo de uso:
+#show: doc => article(
+  title: "Typst IFSC-SJ",
+  subtitle: "Um template para o Typst voltado para",
+  // Se apenas um autor colocar , no final para indicar que é um array
+  authors: ("Gabriel Luiz Espindola Pedro",),
+  date: "13 de Setembro de 2023",
+  doc,
+)
+
+= Soft
+== Close
+=== Closest
+@hard #lorem(80)
+
+== Softest
+
+#lorem(80)
+
+== Softest
+
+#lorem(80)
+
+= Hard <hard>
+
+#lorem(80)
+
+== Hardest
+
+#lorem(80)
+// */
