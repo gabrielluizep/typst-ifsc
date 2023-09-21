@@ -55,7 +55,7 @@
   default(doc)
 }
 
-// /* Exemplo de uso:
+/* Exemplo de uso:
 #show: doc => article(
   title: "Typst IFSC-SJ",
   subtitle: "Um template para o Typst voltado para",
@@ -85,4 +85,4 @@
 == Hardest
 
 #lorem(80)
-// */
+*/
