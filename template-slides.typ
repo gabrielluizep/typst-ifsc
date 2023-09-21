@@ -5,11 +5,39 @@
 #let paddingX = 1.5em
 #let paddingY = 1em
 
+#let footer = [
+  #set align(left + bottom)
+
+  #box(width: 100.1%, height: 1em, fill: primaryColor)[
+    #box(width: 50%, height: 100%)[
+      #align(horizon)[
+        #pad(x: paddingX / 2)[
+          #text(.6em, fill: bgColor)[
+            #counter(page).display("1 / 1", both: true)
+          ]
+        ]
+      ]
+    ]
+
+    #align(right)[
+      #pad(x: 0em)[
+        #circle(width: 1.8em, height: 1.8em, fill: primaryColor)[
+          #align(center + horizon)[
+            #image("./assets/ifsc-logo.png", width: 70%)
+          ]
+        ]
+      ]
+    ]
+  ]
+]
+
 #set page(
   paper: "presentation-16-9",
   margin: 0cm,
   fill: bgColor,
   numbering: "1/1",
+  // TODO: Verificar maneira melhor de remover o footer da primeira página ou de páginas específicas
+  footer: locate(loc => if counter(page).at(loc).first() > 1 [#footer]),
 )
 #set text(size: 25pt, font: "FreeSans")
 
@@ -44,27 +72,6 @@
 
   #pad(x: paddingX, y: paddingY)[
     #doc
-  ]
-
-  #align(bottom)[
-    #box(width: 100.1%, height: 5%, fill: primaryColor)[
-      #v(.25em)
-      #pad(x: paddingX / 2)[
-        #text(.7em, fill: bgColor)[
-          #locate(loc => [#loc.page() /])
-        ]
-      ]
-
-      #align(right)[
-        #pad(x: 0em)[
-          #circle(width: 1.8em, height: 1.8em, fill: primaryColor)[
-            #align(center + horizon)[
-              #image("./assets/ifsc-logo.png", width: 70%)
-            ]
-          ]
-        ]
-      ]
-    ]
   ]
 ]
 
