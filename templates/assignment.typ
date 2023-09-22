@@ -1,4 +1,4 @@
-#let lista(titulo: none, materia: none, doc) = {
+#let lista(title: "Título", course: "Programação I", doc) = {
   set text(font: "Latin Modern Roman", size: 1.1em, lang: "pt")
   set par(justify: true)
   show link: underline
@@ -32,7 +32,7 @@
     ],
   )
 
-  heading(level: 1, materia + " - " + titulo)
+  heading(level: 1, course + " - " + title)
 
   doc
 }

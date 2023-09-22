@@ -23,7 +23,7 @@
       #pad(x: 0em)[
         #circle(width: 1.8em, height: 1.8em, fill: primaryColor)[
           #align(center + horizon)[
-            #image("./assets/ifsc-logo.png", width: 70%)
+            #image("/assets/ifsc-logo.png", width: 70%)
           ]
         ]
       ]
@@ -55,7 +55,7 @@
       #doc
     ], [
       #align(right)[
-        #image("./assets/ifsc-v.png", width: 30%)
+        #image("/assets/ifsc-v.png", width: 30%)
       ]
     ])
   ]
@@ -72,21 +72,5 @@
 
   #pad(x: paddingX, y: paddingY)[
     #doc
-  ]
-]
-
-#title-slide(title: [Slide Massa])[
-  Gabriel Luiz Espindola Pedro\
-  #text(.8em, link("gabrielluizep.glep@gmail.com"))
-
-  #align(bottom)[
-    20/09/2023
-  ]
-]
-
-#slide(title: [Slide Massa])[
-  #text([Título]) \ \
-  #uncover(2)[
-    #text([Subtítulo])
   ]
 ]

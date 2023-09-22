@@ -1,26 +1,15 @@
-/* Exemplo de uso
-  #show: doc => prova(
-    titulo: [Prova 1A],
-    curso: [Engenharia de Telecomunicações],
-    materia: [Programação I],
-    professor: [Roberto Wanderley da Nóbrega],
-    semestre: [2023.2],
-    doc,
-  )
-*/
-
-#let prova(
-  titulo: none,
-  professor: none,
-  email: none,
-  curso: none,
-  materia: none,
-  semestre: none,
+#let exam(
+  title: "Título",
+  professor: "Professor",
+  email: "email@example.com",
+  program: "Engenharia de Programação",
+  course: "Progrmação I",
+  semester: "2023.2",
   doc,
 ) = {
   set page(
     margin: (top: 4.25cm, bottom: 3.25cm, left: 2.25cm, right: 2.25cm),
-    header: image("./assets/ifsc-header.png"),
+    header: image("/assets/ifsc-header.png"),
     footer: [
       #set text(font: "Fira Sans", stretch: 50%, size: 0.65em)
       #set align(center)
@@ -64,16 +53,16 @@
   )[
       #align(center)[
         #set text(font: "Latin Modern Sans")
-        #text(materia, size: 1.1em) \
-        #text(curso, size: 0.9em)
+        #text(course, size: 1.1em) \
+        #text(program, size: 0.9em)
       ]
     ]
 
   text(professor, size: 0.9em, font: "Latin Modern Sans")
   h(1fr)
-  text(semestre, size: 0.9em, font: "Latin Modern Sans")
+  text(semester, size: 0.9em, font: "Latin Modern Sans")
 
-  heading(titulo, level: 1)
+  heading(title, level: 1)
 
   doc
 }
