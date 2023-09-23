@@ -25,7 +25,7 @@
   set math.equation(numbering: "(1)")
 
   align(center)[
-    #image("/assets/ifsc-v.png", width: 10em)
+    #image("../assets/ifsc-v.png", width: 10em)
   ]
 
   align(horizon + center)[

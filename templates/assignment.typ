@@ -23,7 +23,7 @@
   grid(
     columns: (auto, 1fr),
     gutter: 1em,
-    image("assets/ifsc-logo.png", height: 3.5em),
+    image("../assets/ifsc-logo.png", height: 3.5em),
     [
       #set text(font: "Latin Modern Sans")
       Instituto Federal de Santa Catarina\
