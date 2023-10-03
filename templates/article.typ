@@ -1,7 +1,7 @@
 #let article(
   title: "Typst IFSC",
   subtitle: none,
-  authors: ("José Carlos Silva"),
+  authors: ("José Carlos Silva",),
   date: none,
   doc,
 ) = {
