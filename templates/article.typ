@@ -1,7 +1,7 @@
 #let article(
   title: "Typst IFSC",
   subtitle: none,
-  authors: ("José Carlos Silva"),
+  authors: ("José Carlos Silva",),
   date: none,
   doc,
 ) = {
@@ -25,7 +25,7 @@
   set math.equation(numbering: "(1)")
 
   align(center)[
-    #image("/assets/ifsc-v.png", width: 10em)
+    #image("../assets/ifsc-v.png", width: 10em)
   ]
 
   align(horizon + center)[

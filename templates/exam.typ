@@ -9,7 +9,7 @@
 ) = {
   set page(
     margin: (top: 4.25cm, bottom: 3.25cm, left: 2.25cm, right: 2.25cm),
-    header: image("/assets/ifsc-header.png"),
+    header: image("../assets/ifsc-header.png"),
     footer: [
       #set text(font: "Fira Sans", stretch: 50%, size: 0.65em)
       #set align(center)
