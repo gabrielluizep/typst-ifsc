@@ -31,21 +31,29 @@
   ]
 ]
 
-#set page(
-  paper: "presentation-16-9",
-  margin: 0cm,
-  fill: bgColor,
-  numbering: "1/1",
-  // TODO: Verificar maneira melhor de remover o footer da primeira página ou de páginas específicas
-  footer: locate(loc => if counter(page).at(loc).first() > 1 [#footer]),
-)
-#set text(size: 25pt, font: "FreeSans")
+#let ifscyan-footer = state("ifscyan-footer", [])
 
-#let title-slide = (title: none, doc) => polylux-slide[
+#let ifscyan-theme(aspect-ratio: "16-9", body) = {
+  set page(
+    paper: "presentation-" + aspect-ratio,
+    margin: 0cm,
+    fill: bgColor,
+    header: none,
+    footer: none,
+  )
+  set text(size: 25pt, font: "FreeSans")
+  show footnote.entry: set text(size: .6em)
+
+  ifscyan-footer.update(footer)
+
+  body
+}
+
+#let title-slide = (title: "IFSC Polylux", doc) => polylux-slide[
   #box(width: 100.1%, height: 40%, fill: primaryColor)[
     #align(left + bottom)[
       #pad(x: paddingX, y: paddingY)[
-        #text([*IFSC Polylux*], 2em, fill: bgColor)
+        #text([*#title*], 2em, fill: bgColor)
       ]
     ]
   ]
@@ -73,4 +81,6 @@
   #pad(x: paddingX, y: paddingY)[
     #doc
   ]
+
+  #ifscyan-footer.display()
 ]

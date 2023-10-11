@@ -1,6 +1,8 @@
 #import "./ifscyan.typ": *
 
-#title-slide(title: [Slide Massa])[
+#show: body => ifscyan-theme(aspect-ratio: "16-9", body)
+
+#title-slide(title: "Slide Massa")[
   Gabriel Luiz Espindola Pedro\
   #text(.8em, link("gabrielluizep.glep@gmail.com"))
 
@@ -9,9 +11,10 @@
   ]
 ]
 
-#slide(title: [Slide Massa])[
+#slide(title: "Slide Massa")[
   #text([Título]) \ \
-  #uncover(2)[
-    #text([Subtítulo])
-  ]
+
+  // #uncover(2)[
+  //   #text([Subtítulo])
+  // ]
 ]
