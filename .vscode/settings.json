@@ -1,0 +1,13 @@
+{
+  "editor.insertSpaces": true,
+  "editor.formatOnSave": true,
+  "files.eol": "\n",
+  "github.copilot.enable": {
+    "*": true
+  },
+  "[typst]": {
+    "editor.wordWrap": "on",
+    "editor.semanticHighlighting.enabled": true,
+    "editor.tabSize": 2,
+  }
+}
