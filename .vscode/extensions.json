@@ -1,6 +1,7 @@
 {
   "recommendations": [
     "nvarner.typst-lsp",
-    "mgt19937.typst-preview"
+    "mgt19937.typst-preview",
+    "mathematic.vscode-pdf"
   ]
 }
