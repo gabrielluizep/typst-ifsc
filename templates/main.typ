@@ -1,6 +1,6 @@
-#import "templates/article.typ": *
-#import "templates/assignment.typ": *
-#import "templates/exam.typ": *
+#import "article.typ": *
+#import "assignment.typ": *
+#import "exam.typ": *
 
-#import "templates/slides/ifsclean.typ": *
-#import "templates/slides/ifscyan.typ": *
+#import "slides/ifsclean.typ": *
+#import "slides/ifscyan.typ": *
