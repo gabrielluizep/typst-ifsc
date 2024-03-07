@@ -1,4 +1,4 @@
-#import "./ifscyan.typ": *
+#import "../templates/ifscyan.typ": *
 
 #show: body => ifscyan-theme(aspect-ratio: "16-9", body)
 

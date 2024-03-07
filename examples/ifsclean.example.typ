@@ -1,4 +1,4 @@
-#import "./ifsclean.typ": *
+#import "../templates/ifsclean.typ": *
 
 #show: body => ifsclean-theme(aspect-ratio: "16-9", body)
 

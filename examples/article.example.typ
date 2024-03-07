@@ -1,4 +1,4 @@
-#import "./article.typ": *
+#import "../templates/article.typ": *
 
 #show: doc => article(
   title: "Typst IFSC-SJ",

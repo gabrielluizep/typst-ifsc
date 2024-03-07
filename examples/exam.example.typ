@@ -1,4 +1,4 @@
-#import "./exam.typ": *
+#import "../templates/exam.typ": *
 
 #show: doc => exam(
   title: "Prova 1A",

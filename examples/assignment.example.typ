@@ -1,1 +1,1 @@
-#import "./assignment.typ": *
+#import "../templates/assignment.typ": *
