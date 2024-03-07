@@ -1,5 +1,0 @@
-# Exemplos
-
-## IFSCyan
-
-![](../../examples/assets)
