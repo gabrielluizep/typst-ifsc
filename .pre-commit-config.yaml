@@ -1,7 +1,0 @@
-
-repos:
-  - repo: https://github.com/astrale-sharp/typstfmt
-    rev: 0.2.4
-    hooks:
-      - id: typstfmt
-
